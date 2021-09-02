@@ -1,0 +1,7 @@
+<p class="box">success-alert works!</p>
+
+<label>UserName</label>
+<input type="text" class="form-control" [(ngModel)]="onUserName">
+<p>{{onUserName}}</p>
+
+<button class="btn btn-primary" [disabled]="onUserName == ''" (click)="onUserName =''">Reset User</button>
